@@ -2,6 +2,9 @@
 .txt-center {
 	text-align: center;
 }
+strong {
+	font-weight: 700;
+}
 
 
 /* typo */
@@ -25,6 +28,9 @@
 }
 	.text-l {
 		font-size: 14px;
+	}
+	.text-m {
+		font-size: 12px;
 	}
 
 
