@@ -257,3 +257,17 @@
 	.footer-listItem:first-child {
 		margin-left: 0;:;
 	}
+
+
+/* responsive */
+@media (max-width: 600px) {
+	.section {
+		padding: 60px 0;
+	}
+	.section--noPadding {
+		padding: 0;
+	}
+	.section--noPaddingTop {
+		padding-top: 0;
+	}
+}
