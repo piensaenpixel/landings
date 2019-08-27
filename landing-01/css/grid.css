@@ -127,4 +127,7 @@
     flex: 0 0 50%;
     max-width: 50%;
   }
+  .section--noPadding .grid-cell--col12--mobile:last-child {
+    margin-bottom: 0;
+  }
 }
