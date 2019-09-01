@@ -138,6 +138,7 @@
 	.termslink {
 		font-family: 'Roboto';
 		font-size: 12px;
+		line-height: 14px;
 	}
 
 
@@ -255,15 +256,32 @@
 		margin-left: 20px;
 	}
 	.footer-listItem:first-child {
-		margin-left: 0;:;
+		margin-left: 0;
+	}
+	.form-group.terms {
+		display: flex;
+	}
+	.form-group.terms input {
+		margin-right: 8px;
+	}
+	.termslink-link {
+		text-decoration: underline;
+		cursor: pointer;
 	}
 
-
 /* responsive */
-@media (max-width: 600px) {
+@media (max-width: 800px) {
 	body {
 		overflow-x: hidden;
 	}
+	.header-title--tablet {
+		flex: 1;
+		justify-content: center;
+	}
+}
+
+/* responsive */
+@media (max-width: 600px) {
 	.section {
 		padding: 60px 0;
 	}
@@ -310,5 +328,10 @@
   }
   .form-control {
   	border: 1px solid rgba(0, 0, 0, 0.10);
+  }
+  .quote-authorInfo {
+  	flex: 0 0 auto;
+    margin-left: 20px;
+    justify-content: flex-end;
   }
 }
