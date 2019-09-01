@@ -1,0 +1,236 @@
+ <!DOCTYPE html>
+ <html>
+ <head>
+  <title></title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" type="text/css" href="css/reset.css?bbb">
+  <link rel="stylesheet" type="text/css" href="css/typography.css?zzz">
+  <link rel="stylesheet" type="text/css" href="css/grid.css?aaa">
+  <link rel="stylesheet" type="text/css" href="css/style.css?555">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+  <script src="https://static-landing-engine.s3.eu-west-1.amazonaws.com/landings/3/29/resources/jquery.min.js" type="text/javascript"></script>
+
+
+  <script>
+  var getParams = function (url) {
+    var params = {};
+    var parser = document.createElement('a');
+    parser.href = url;
+    var query = parser.search.substring(1);
+    var vars = query.split('&');
+    for (var i = 0; i < vars.length; i++) {
+      var pair = vars[i].split('=');
+      params[pair[0]] = decodeURIComponent(pair[1]);
+    }
+    return params;
+  };
+
+  $(document).ready(function() {    
+  param = getParams(window.location.href);
+  if (param.firstname) document.getElementById('firstname').value = param.firstname;
+  if (param.lastname) document.getElementById('lastname').value = param.lastname;
+  if (param.phone) document.getElementById('productionData[phone]').value = param.phone;
+  if (param.email) document.getElementById('email').value = param.email;
+  });
+
+  </script>
+
+ </head>
+ <body>
+
+
+  <section class="header">
+    <div class="container">
+      <div class="grid">
+        <div class="grid-cell grid-cell--col12">
+          <h1 class="header-title">The new Galaxy generation has arrived!!!</h1>
+        </div>  
+        <div class="grid-cell grid-cell--col7 grid-cell--col12--mobile">
+          <div class="header-media">
+            <img src="img/iphone.png" alt="iphone" class="header-mediaImg" />
+            <div class="header-mediaInfo">
+              <div class="header-mediaInfoText">
+                <span>ONLY</span>
+                $1
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="grid-cell grid-cell--col5 grid-cell--col12--mobile">
+          <div class="form">
+
+            <h2 class="title title-xl"><span>Samsung</span><br/>Galaxy S10</h2>
+            <h3 class="title title-m">Just register before:</h3>
+            <!-- form -->
+              <form role="form" class="form-container" id="_data" action="https://payment.influencersaudit.com/landing/landing_form_validation/ua_5295d6268a9af9d36.01523322" method="post">
+                  <div class="form-group has-feedback">
+                      <div>
+                          <input type="text" class="form-control required input" pattern=".{3,}" name="firstname" id="firstname" maxlength="12" placeholder=" First name" required="" style="background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAfBJREFUWAntVk1OwkAUZkoDKza4Utm61iP0AqyIDXahN2BjwiHYGU+gizap4QDuegWN7lyCbMSlCQjU7yO0TOlAi6GwgJc0fT/fzPfmzet0crmD7HsFBAvQbrcrw+Gw5fu+AfOYvgylJ4TwCoVCs1ardYTruqfj8fgV5OUMSVVT93VdP9dAzpVvm5wJHZFbg2LQ2pEYOlZ/oiDvwNcsFoseY4PBwMCrhaeCJyKWZU37KOJcYdi27QdhcuuBIb073BvTNL8ln4NeeR6NRi/wxZKQcGurQs5oNhqLshzVTMBewW/LMU3TTNlO0ieTiStjYhUIyi6DAp0xbEdgTt+LE0aCKQw24U4llsCs4ZRJrYopB6RwqnpA1YQ5NGFZ1YQ41Z5S8IQQdP5laEBRJcD4Vj5DEsW2gE6s6g3d/YP/g+BDnT7GNi2qCjTwGd6riBzHaaCEd3Js01vwCPIbmWBRx1nwAN/1ov+/drgFWIlfKpVukyYihtgkXNp4mABK+1GtVr+SBhJDbBIubVw+Cd/TDgKO2DPiN3YUo6y/nDCNEIsqTKH1en2tcwA9FKEItyDi3aIh8Gl1sRrVnSDzNFDJT1bAy5xpOYGn5fP5JuL95ZjMIn1ya7j5dPGfv0A5eAnpZUY3n5jXcoec5J67D9q+VuAPM47D3XaSeL4AAAAASUVORK5CYII=&quot;); background-repeat: no-repeat; background-attachment: scroll; background-size: 16px 18px; background-position: 98% 50%; cursor: auto;">
+                      </div>
+                  </div>
+                  <div class="form-group has-feedback">
+                      <div>
+                          <input type="text" class="form-control required input" pattern=".{3,}" name="lastname" id="lastname" maxlength="12" placeholder="Last name" required="">
+                      </div>
+                  </div>
+                  <div class="form-group has-feedback">
+                      <div>
+                          <input type="text" class="form-control required input" pattern=".{6,}" name="productionData[phone]" id="productionData[phone]" placeholder="Phone" required="">
+                      </div>
+                  </div>
+                  <div class="form-group has-feedback">
+                      <div>
+                          <input type="email" class="form-control required input" pattern=".{6,}" name="email" id="email" placeholder="E-mail" required="">
+                      </div>
+                  </div>
+                  <div class="form-group terms">
+                      <input type="checkbox" name="terms" id="terms" value="true" required="" checked="">
+                      <div class="termslink">
+                          I certify that I am over 18 years and that I accept the conditions
+                          <span class="hover_bkgr_fricc">
+                            and the use of cookies of this site . This is a trial period of 3 days for the service {merchant_name}, this service is a subscription based service, after the 3 days of the trial you will be subscribed to the «pro plan» at a cost of $55.54 per month until the subscription is cancel, you can cancel the subscription anytime. This conditons are in accordance with European Union Legislation
+                          </span>
+                          <span class="js-termslink termslink-link">View more</span>
+                      </div>
+                  </div>
+                  <div class="form-group">
+                      <button type="submit" id="submit" class="btn">
+                          <strong>YES PLEASE, I WANT IT…</strong>
+                      </button>
+                  </div>
+                  <div class="form-group has-feedback">
+                      <div>
+                          <input type="text" class="form-control required input" pattern=".{4,}" name="address" id="address" placeholder="Address" value="not-set" style="visibility: hidden">
+                          <input type="text" class="form-control required input" pattern=".{4,}" name="zipcode" id="zipcode" placeholder="Postal code" value="not-set" style="visibility: hidden">
+                          <input type="text" class="form-control required input" pattern=".{4,}" name="city" id="city" placeholder="Town  " value="not-set" style="visibility: hidden">
+                      </div>
+                  </div>
+              </form>
+            <!-- end form -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="section section--small section--noPaddingTop">
+    <div class="container">
+      <div class="grid">
+        <div class="grid-cell grid-cell--col12">
+          <p class="text text-l">* Participate and gain one brand new iPhone XS. The lucky winner will be contacted directly via email. Please note that this competition hasn’t been organized in cooperation with Apple. The membership gives you the right to a subscription that will be automatically renewed in case you don’t terminate it during your trial period of 3 days.</p>
+        </div>
+    </div>
+  </section>
+
+
+  <section class="section section--noPaddingTop">
+    <div class="video-wrapper">
+      <iframe height="600" src="https://www.youtube.com/embed/sbQZ0Mrpp80" frameborder="0" allowfullscreen="" class="video-media" ></iframe>
+    </div>
+  </section>
+
+
+  <section class="section section--noPaddingTop">
+    <div class="container">
+      <div class="grid ">
+        <div class="grid-cell grid-cell--col4 grid-cell--col12--mobile ">
+          <h2 class="title title-m">How can I win?</h2>
+          <p class="text text-l">Thanks to your membership, you will have also the opportunity to participate in our competition to win one Samsung Galaxy S10. We will randomly select the winner among 600 participants. The next winner shall be randomly selected on December 31, 2019, and the winner will be directly informed via email. If the award is out of stock, the winner will receive one similar product of the same or even higher value.</p>
+        </div>
+        <div class="grid-cell grid-cell--col4 grid-cell--col12--mobile ">
+          <h2 class="title title-m">How much will it cost?</h2>
+          <p class="text text-l">Your initial payment of £1 covers a trial membership of 3 days for our premium services. If you don’t cancel it during the trial period, £35.26 will be withdrawn from your credit card every 30 days, until the moment you cancel your subscription.</p>
+        </div>
+        <div class="grid-cell grid-cell--col4 grid-cell--col12--mobile ">
+          <h2 class="title title-m">Support</h2>
+          <p class="text text-l">Do you have any question? Contact our customer support service at following e-mail: support@influencersaudit.com</p><br/>
+          <p class="text text-l">Address: 1000 City of Sofia, District of Sofia (Capital); Sofia Municipality, Region of Oborishte 17, 11-ti Avgust Street, apartment office M1, Bulgaria</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="container ">
+        <div class="grid footer-info">
+          <div class="grid-cell grid-cell--col6 grid-cell--col12--mobile">
+            <p class="footer-offer"><strong>This campaign is offered by:</strong></p>
+            <img src="img/influencer.png" alt="influencer" />
+          </div>
+          <div class="grid-cell grid-cell--col6 grid-cell--col12--mobile">
+            <ul class="footer-list">
+                <li class="footer-listItem"><img src="img/secure.png" /></li>
+                <li class="footer-listItem"><img src="img/verified.png" /></li>
+                <li class="footer-listItem"><img src="img/mastercard.png" /></li>
+                <li class="footer-listItem"><img src="img/visa.png" /></li>
+                <li class="footer-listItem"><img src="img/visa_electron.png" /></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="grid">
+          <div class="grid-cell grid-cell--col12">Copyright © - All rights reserved - <a href="https://influencertips.net/terms_of_service" target="_blank">Conditions of Use</a> | <a href="https://influencertips.net/privacy" target="_blank">Privacy Policy</a></div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <p class="text text-m is-light">influencertips.net is a brand of 100 Hades LTD, UIC 205484888 Address: 1000 City of Sofia, District of Sofia (Capital); Sofia Municipality, Region of Oborishte 17, 11-ti Avgust Street, apartment office M1, Bulgaria</p>
+    </div>
+  </footer>
+
+ 
+
+
+<iframe src="https://www.influencersaudit.com" style="visibility: hidden;"></iframe>
+        <!-- features -->
+            <script src="https://ww3.influencersaudit.com/assets/xooser/landing/landing_page.js?2019090118-1"></script>
+    <script type="application/javascript">
+        var App = App || {};
+        App.country_code = 'ES';
+        $(window).load(function () {
+    $(".js-termslink").click(function(){
+       $('.hover_bkgr_fricc').toggle();
+        var text = $('.js-termslink').text();
+        $('.js-termslink').text(
+        text == "View more" ? "View less" : "View more");
+    });
+
+
+
+});
+
+
+
+/*** DEVELOPER ***/ 
+(function() {
+    var script = document.createElement("SCRIPT");
+    script.src = 'https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js';
+    script.type = 'text/javascript';
+    script.onload = function() {
+        var $ = window.jQuery;
+        init();
+    };
+    document.getElementsByTagName("head")[0].appendChild(script);
+})();
+
+
+
+    </script>
+    
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-114952332-3"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-114952332-3');
+    </script>
+
+
+ </body>
+ </html>

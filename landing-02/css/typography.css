@@ -1,0 +1,48 @@
+/* helpers */
+.txt-center {
+	text-align: center;
+}
+strong {
+	font-weight: 700;
+}
+
+
+/* typo */
+.title {
+	font-family: 'Roboto';
+	font-weight: 700;
+	line-height: 1.4;
+}
+	.title-xl {
+		font-size: 70px;
+		margin-bottom: 40px;
+	}
+	.title-xl span {
+		font-size: 50px;
+		font-weight: 400;
+	}
+	.title-l {
+		font-size: 26px;
+		margin-bottom: 20px;
+	}
+	.title-m {
+		font-size: 22px;
+		margin-bottom: 10px;
+	}
+
+.text {
+	font-family: 'Roboto';
+	line-height: 1.4;
+}
+	.text-l {
+		font-size: 14px;
+	}
+	.text-m {
+		font-size: 12px;
+	}
+
+
+/* colors */
+.is-light {
+	color: rgba(0, 0, 0, 0.6);
+}
