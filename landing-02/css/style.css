@@ -13,7 +13,7 @@
 		color: #fff;
 		display: flex;
 		align-items: center;
-		margin-bottom: 20px;
+		margin-bottom: 60px;
 	}
 	.header-titleNumber {
 		margin: 0 16px;
@@ -30,7 +30,7 @@
 		position: relative;
 	}
 	.header-mediaImg {
-		width: 400px;
+		width: 500px;
 	}
 	.header-mediaInfo {
 		position: absolute;
@@ -41,22 +41,9 @@
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		background: rgb(243,149,57);
-		background: linear-gradient(-90deg, rgba(243,149,57,1) 0%, rgba(229,87,16,1) 100%);
+		background: #132598;
 		top: 50%;
 		left: 0;
-	}
-	.header-mediaInfo:before {
-		content: '';
-		pointer-events: none;
-		border: 2px solid rgb(243,149,57);
-		width: 220px;
-		height: 220px;
-		background: none;
-		border-radius: 50%;
-		position: absolute;
-		top: -11px;
-		left: -11px;
 	}
 	.header-mediaInfoText {
 		display: flex;
@@ -83,9 +70,26 @@
 	.list-featuresItem:last-child {
 		margin: 0;
 	}
+	.title-media {
+		margin-bottom: 20px;
+		width: 150px;
+	}
+	.list-featuresContainer {
+		display: flex;
+	}
+	.list-features {
+		padding: 20px;
+		background: #FFF;
+		color: #000;
+		margin-bottom: 40px;
+		border-radius: 4px;
+	}
+	.list-featuresMedia {
+		margin-bottom: 20px;
+	}
+
 /* form */
 .form {
-	margin: 20px 0 0 0;
 }
 	.btn {
 		background: #132598;
@@ -110,10 +114,6 @@
 		font-family: 'Roboto';
 		font-size: 16px;
 		border-radius: 2px;
-		border: 1px solid transparent;
-	}
-	.form-control:focus {
-		border: 1px solid #E55710;
 	}
 	.form-control:focus {
 		outline: none;
@@ -281,6 +281,10 @@
 
 /* responsive */
 @media (max-width: 600px) {
+	.list-features {
+		flex: 1;
+		margin: 0;
+	}
 	.section {
 		padding: 60px 0;
 	}
@@ -291,24 +295,25 @@
 		padding-top: 0;
 	}
 	.header-mediaImg {
-		width: 100%;
+		width: 80%;
+		transform: translateX(-10px);
 	}
 	.header-mediaInfo {
-    top: -70px;
-    transform: scale(0.6);
+    top: 0;
+    transform: scale(1.1);
     left: auto;
-    right: -35px;
+    right: 13px;
   }
   .header-title {
-  	justify-content: center;
-    transform: scale(0.7);
+		justify-content: center;
+    padding: 20px 10px;
+    margin-bottom: 40px;
   }
   .header {
   	padding: 0;
   }
   .form {
-  	margin-top: -80px;
-  	box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  	margin-top: -180px;
   }
   .list-media {
   	width: 100%;
